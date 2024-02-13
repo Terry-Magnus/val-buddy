@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine Buddy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="question1" class="question">
+        <h1>Am I still your baby or have you found another baby?</h1>
+        <button class="btn" onclick="showQuestion('question2')">
+          You still are
+        </button>
+        <button class="btn" onclick="showQuestion('question2')">
+          I’ve found another
+        </button>
+      </div>
+      <div id="question2" class="question hidden">
+        <h1>who do you love more?</h1>
+        <button class="btn" onclick="showQuestion('question3')">Chunky</button>
+        <button class="btn" onclick="showQuestion('question3')">Me</button>
+      </div>
+      <div id="question3" class="question hidden">
+        <h1>Where was our first date?</h1>
+        <button class="btn" onclick="showQuestion('question4')">
+          the good beach
+        </button>
+        <button class="btn" onclick="showQuestion('question4')">
+          landmark
+        </button>
+      </div>
+      <div id="question4" class="question hidden">
+        <h1>Do you miss your cheesecake?</h1>
+        <button class="btn" onclick="showQuestion('question5')">Maybe</button>
+        <button class="btn" onclick="showQuestion('question5')">Yessss</button>
+      </div>
+      <div id="question5" class="question hidden">
+        <h1>You’ve successfully answered all the questions.</h1>
+      </div>
+      <div id="question6" class="question hidden">
+        <h1>Oops! Just one more</h1>
+      </div>
+      <div id="question7" class="question hidden">
+        <h2>Dr Efe Favor Lawerence,</h2>
+        <h1>Will you be my Valentine??????</h1>
+        <button class="btn" onclick="displayResult('yes')">Yes</button>
+        <button class="btn" onclick="displayResult('no')">No</button>
+      </div>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
